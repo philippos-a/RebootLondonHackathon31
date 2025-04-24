@@ -1,64 +1,73 @@
-# RebootLondonHackathon
+# Welcome to your Lovable project
 
+## Project info
 
-This is the repository for the Reboot London Hackathon.
+**URL**: https://lovable.dev/projects/0c870ad1-8e84-4424-baee-422cd4392982
 
-## Fork this Repository
+## How can I edit this code?
 
-To fork this repository, select the `Fork` dropdown menu next to the title:
+There are several ways of editing your application.
 
-![](./images/fork.png)
+**Use Lovable**
 
-Then select `+ Create New Fork`:
+Simply visit the [Lovable Project](https://lovable.dev/projects/0c870ad1-8e84-4424-baee-422cd4392982) and start prompting.
 
-![](./images/create-new-fork.png)
+Changes made via Lovable will be committed automatically to this repo.
 
-For the `Repository name`, please make sure you enter your team's name so that we can keep track of the different repositories.
+**Use your preferred IDE**
 
-If your team is building multiple components and requires multiple repositories, fork this repository and enter the team name followed by the name of the component.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-For example, if you have a `frontend` and `backend` application, the first fork can be called `TeamName-frontend` and the second fork can be called `TeamName-backend`.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-> [!NOTE]
-> If you're only building a single component, you can leave the `Repository name` as `TeamName`.
+Follow these steps:
 
-Once you've entered the name, select `Create fork`:
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-![](./images/create-fork.png)
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### Add Collaborators
+# Step 3: Install the necessary dependencies.
+npm i
 
-Now that you've created your own fork, if another member within your team wants to contribute to the code, you would need to add them as a collaborator.
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-To do so, navigate to the repository containing your fork and click on `Settings`:
+**Edit a file directly in GitHub**
 
-![](./images/settings.png)
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Then select the `Collaborators` option in the navigation menu on the left:
+**Use GitHub Codespaces**
 
-![](./images/collaborators.png)
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Select `Add people`:
+## What technologies are used for this project?
 
-![](./images/add-people.png)
+This project is built with:
 
-And search for the `username`, `full name`, or `email` of the member you want to add to the repository.
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-Then they can clone your repository and contribute code to your fork.
+## How can I deploy this project?
 
-> [!NOTE]
-> Please make sure to add them to your forked version of the repository. You won't be able to add them here directly.
->
-### How to sign in to GitHub Copilot
+Simply open [Lovable](https://lovable.dev/projects/0c870ad1-8e84-4424-baee-422cd4392982) and click on Share -> Publish.
 
-IT@LBG request will need to have been raised and completed before you can do the below:
- 
-Once you've been given a licence you'll be sent your username in an email (to your LBG email address).
+## Can I connect a custom domain to my Lovable project?
 
-When logging in use the username you've been given (example: charlotte-Boults_lbgghcp) this will remove the password field and redirect you to the Microsoft sign in page.
+Yes, you can!
 
-On the Microsoft sign in page use your LBG global credentials (example:Charlotte.boults@lloydsbanking.com) and password you use to log into your work device.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Once authentication is complete you should be re-directed to GitHub Copilot home page.
-
-Now you're ready to start. Happy coding!
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)

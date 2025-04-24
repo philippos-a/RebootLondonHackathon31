@@ -1,0 +1,79 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 30% 98%;
+    --foreground: 122 10% 20%;
+
+    --card: 60 30% 96%;
+    --card-foreground: 122 10% 20%;
+
+    --popover: 60 30% 98%;
+    --popover-foreground: 122 10% 20%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 80 70% 90%;
+    --secondary-foreground: 122 50% 30%;
+
+    --muted: 60 30% 94%;
+    --muted-foreground: 122 10% 40%;
+
+    --accent: 80 70% 85%;
+    --accent-foreground: 122 50% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 355 100% 100%;
+
+    --border: 122 10% 85%;
+    --input: 122 10% 85%;
+    --ring: 142 70% 45%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 60 30% 98%;
+    --sidebar-foreground: 122 10% 20%;
+    --sidebar-primary: 142 70% 45%;
+    --sidebar-primary-foreground: 355 100% 100%;
+    --sidebar-accent: 80 70% 90%;
+    --sidebar-accent-foreground: 122 10% 20%;
+    --sidebar-border: 122 10% 85%;
+    --sidebar-ring: 142 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .gradient-button {
+    @apply bg-gradient-to-br from-primary to-primary/80 text-primary-foreground rounded-full font-medium px-6 py-3 hover:shadow-md transition-all transform hover:scale-105 active:scale-95;
+  }
+  
+  .card-highlight {
+    @apply bg-gradient-cream-green rounded-2xl p-6 shadow-md;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-foreground/80 mb-4;
+  }
+  
+  .chat-bubble-user {
+    @apply bg-primary/10 p-4 rounded-xl rounded-br-sm max-w-[80%] ml-auto;
+  }
+  
+  .chat-bubble-ai {
+    @apply bg-secondary/50 p-4 rounded-xl rounded-bl-sm max-w-[80%];
+  }
+}
